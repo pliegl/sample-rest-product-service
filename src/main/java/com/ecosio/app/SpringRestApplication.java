@@ -7,7 +7,7 @@ import org.springframework.boot.web.support.SpringBootServletInitializer;
 import org.springframework.context.annotation.ComponentScan;
 
 /**
- * Run in Tomcat
+ * Sample RESTful application
  */
 @SpringBootApplication
 @ComponentScan("com.ecosio")
@@ -25,16 +25,3 @@ public class SpringRestApplication extends SpringBootServletInitializer {
   }
 
 }
-
-///**
-// * Run as standalone Java app
-// */
-//@SpringBootApplication
-//@ComponentScan("com.ecosio")
-//public class SpringRestApplication {
-//
-//  public static void main(String[] args) throws Exception {
-//    SpringApplication.run(SpringRestApplication.class, args);
-//  }
-//
-//}
