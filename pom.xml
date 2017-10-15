@@ -20,6 +20,8 @@
         <java.version>1.8</java.version>
     </properties>
 
+
+
     <dependencies>
 
         <dependency>
@@ -29,6 +31,15 @@
                 <exclusion>
                     <groupId>org.springframework.boot</groupId>
                     <artifactId>spring-boot-starter-tomcat</artifactId>
+                </exclusion>
+                <!-- Exclude logback and SLF4J, otherwise the app won't start on SAP Cloud Platform -->
+                <exclusion>
+                    <artifactId>logback-classic</artifactId>
+                    <groupId>ch.qos.logback</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>slf4j-api</artifactId>
+                    <groupId>org.slf4j</groupId>
                 </exclusion>
             </exclusions>
         </dependency>
@@ -52,6 +63,7 @@
             <optional>true</optional>
         </dependency>
     </dependencies>
+
 
     <build>
         <finalName>sample-rest-product-service</finalName>

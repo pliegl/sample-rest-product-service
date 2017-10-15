@@ -32,8 +32,8 @@ public class ProductController {
 
   @PostConstruct
   private void loadDummyData() {
-    products.add(Product.builder().id("1").name("Apfel").price(new BigDecimal("0.7")).build());
-    products.add(Product.builder().id("2").name("Birne").price(new BigDecimal("0.8")).build());
+    products.add(Product.builder().id("1").name("Apple").price(new BigDecimal("0.7")).build());
+    products.add(Product.builder().id("2").name("Pear").price(new BigDecimal("0.8")).build());
     products.add(Product.builder().id("3").name("Orange").price(new BigDecimal("0.4")).build());
   }
 
